@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    /* --mainText: #f4e9d4; */
+
+    --navFontXL: 17px;
+
+    /* --mainBg: #f9f5f2; */
+    --mainBg: rgba(65, 67, 69, 1);
+    /* --mainText: #D4D3DD; */
+    --mainText: #E2E2E2;
+    --keep: #ADA996;
+    --secondaryText: #FBDC88;
+    --navColor: rgba(65, 67, 69, 0.85);
+
+    --stroke-color: #ffd89b;
+    --stroke-circle: #636FA4;
+
+    --title-font: 'Corinthia', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0; 
+    /* font-family: 'Corinthia', cursive; */
+    font-family: 'Roboto', sans-serif;;
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
+    /* background-color: #0E0B16; */
+    /* background-color: var(--mainBg); */
+    /* background-color: #000; */
+    /* background-color: #2a2a2a; */
+    background-color: whitesmoke;
+    /* background-color: #374151; */
+    /* background-color: rgba(42, 42, 42, 0.85); */
+}
+
+.nav-scroll-adjust {
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+}
+
+
+a:hover {
+    text-decoration: none;
+}

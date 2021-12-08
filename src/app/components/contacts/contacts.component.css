@@ -1,0 +1,29 @@
+.footer {
+    background-color: #EFF6FF;
+    padding: 50px 0;
+    text-align: center;
+}
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+h4 {
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.fa-icon {
+    font-size: 20px;
+}
+
+fa-icon {
+    margin-right: 5px;
+}

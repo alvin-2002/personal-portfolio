@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'personal-portfolio';
+  showLoading: boolean = true;
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.showLoading = false;
+    }, 2000)
+  }
 }

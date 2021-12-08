@@ -1,0 +1,27 @@
+<!-- <div class="container"> -->
+    <div class="img">
+        <!-- <img src="../../../assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="img"alt=""> -->
+        <app-navbar></app-navbar>
+        <section [@navAnimate] class="home">
+            <div class="content">
+
+                <h2 class="nav-item">Hello World! My name is </h2>
+                <h1 class="name-tag nav-item">Alvin Lin</h1>
+                <h4 class="nav-item">I am a Software Developer, I enjoy building things for Web</h4>
+
+                <div class="infos">
+                    <a href="https://github.com/alvin-2002" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faGit"></fa-icon></a>
+                    <a href="https://www.linkedin.com/in/alvin-lin/" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                    <a href="mailto: alvinmaung@gmail.com" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faEmail"></fa-icon></a>        
+                </div>
+                <div class="resume nav-item">
+                    <a href="#" class="resume-btn">Resume</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <button (click)="exp()">Cicl</button> -->
+    <app-about></app-about>
+    <app-projects></app-projects>
+    <app-contacts></app-contacts>
+<!-- </div> -->

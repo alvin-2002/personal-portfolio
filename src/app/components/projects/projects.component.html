@@ -1,0 +1,82 @@
+<div class="nav-scroll-adjust" id="projects"></div>
+
+<div>
+    <div class="title">
+            <h1>Projects</h1>
+            <!-- <p>Here you will find some of the projects that I created with each project containing it's github and live access</p> -->
+        </div>
+        <div class="project-wrapper">
+            <div class="project-card" appScrollDirective (appear)="onAppear(0)" [@aboutAnimate]="display[0]">
+                <img src="../../../assets/images/covid-19-tracker-project.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Covid-19 Tracker Website</h5>
+                    <div class="technologies">
+                        <span>Angular2+</span>
+                        <span>TypeScript</span>
+                        <span>Chart.js</span>
+                        <span>API</span>
+                        <span>Responsive</span>
+                    </div>
+                    <h5>Covid-19 is a React project developed in support of people suffering and affected due to Covid-19 virus all around the world. The app lets the user track the growth of active cases in their country and provides statistics from all around the world.</h5>
+                    <div class="links">
+                        <a href="https://github.com/alvin-2002/covid19-tracker" target="_blank" class="link">
+                            <fa-icon [icon]="gitHub"></fa-icon>
+                            Source Code
+                        </a>
+                        <a href="https://covid-19-tracker-91af4.web.app/" target="_blank" class="link">
+                            <fa-icon [icon]="link"></fa-icon>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card"  appScrollDirective (appear)="onAppear(1)" [@aboutAnimate]="display[1]">
+                <img src="../../../assets/images/tictactoe.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tic Tac Toe Website</h5>
+                    <div class="technologies">
+                        <span>HTML & CSS</span>
+                        <span>Javascript</span>
+                        <span>MiniMax Algorithm</span>
+                        <span>Responsive</span>
+                    </div>
+                    <h5>Tic Tac Toe website implemented using HTML, CSS and Javascript. </h5>
+                    <h5>Difficulty 3 AI is implemented using MiniMax Algorithm, thus making it unbeatable</h5>
+                    <div class="links">
+                        <a href="https://github.com/alvin-2002/TicTacToe" target="_blank" class="link">
+                            <fa-icon [icon]="gitHub"></fa-icon>
+                            Source Code
+                        </a>
+                        <a href="https://alvin-2002.github.io/TicTacToe/" target="_blank" class="link">
+                            <fa-icon [icon]="link"></fa-icon>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card"  appScrollDirective (appear)="onAppear(2)" [@aboutAnimate]="display[2]">
+                <img src="../../../assets/images/hex-board-game.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">9x9 HexBoard Game Website</h5>
+                    <div class="technologies">
+                        <span>HTML & CSS</span>
+                        <span>Javascript</span>
+                        <span>BackTracking Algorithm</span>
+                        <span>Responsive</span>
+                    </div>
+                    <h5>Hex Board game website implemented using HTML, CSS and Javascript.</h5>
+                    <h5>Win Checking is implemented using Backtracking algorithm.</h5>
+                    <div class="links">
+                        <a href="https://github.com/alvin-2002/Hex-Board-Game" target="_blank" class="link">
+                            <fa-icon [icon]="gitHub"></fa-icon>
+                            Source Code
+                        </a>
+                        <a href="https://alvin-2002.github.io/Hex-Board-Game/" target="_blank" class="link">
+                            <fa-icon [icon]="link"></fa-icon>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
