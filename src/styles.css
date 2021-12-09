@@ -10,6 +10,7 @@
     --mainText: #E2E2E2;
     --keep: #ADA996;
     --secondaryText: #FBDC88;
+    /* --secondaryText: #fff724; */
     --navColor: rgba(65, 67, 69, 0.85);
 
     --stroke-color: #ffd89b;
@@ -33,7 +34,9 @@ body {
     /* background-color: var(--mainBg); */
     /* background-color: #000; */
     /* background-color: #2a2a2a; */
-    background-color: whitesmoke;
+    /* background-color: #BEBDB8; */
+    /* background-color: #C7C6C1; */
+    background-color: #D9DDDC;
     /* background-color: #374151; */
     /* background-color: rgba(42, 42, 42, 0.85); */
 }

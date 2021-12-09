@@ -30,7 +30,7 @@ nav li {
     font-size: var(--navFontXL);
 }
 
-nav a::after {
+nav li a::after {
     content: "";
     position: absolute;
     /* display: block;  */
@@ -46,10 +46,11 @@ nav a::after {
 }
 
 .active a {
-    color: var(--secondaryText) !important;
+    color: #f2c94c !important;
+
 }
 
-nav a:hover::after {
+nav li a:hover::after {
     width: 100%;
     left: 0;
     background: linear-gradient(to right, #f2994a, #f2c94c);

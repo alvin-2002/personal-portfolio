@@ -1,13 +1,13 @@
-<!-- <div class="container"> -->
-    <div class="img">
-        <!-- <img src="../../../assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="img"alt=""> -->
-        <app-navbar></app-navbar>
-        <section [@navAnimate] class="home">
-            <div class="content">
 
-                <h2 class="nav-item">Hello World! My name is </h2>
+    <div class="hero-img">
+        <app-navbar></app-navbar>
+        <section [@navAnimate] class="home-page">
+            <div class="home-content">
+                <h1 class="nav-item intro-text">Hi, My name is</h1>
                 <h1 class="name-tag nav-item">Alvin Lin</h1>
-                <h4 class="nav-item">I am a Software Developer, I enjoy building things for Web</h4>
+                <h1 class="nav-item role-heading">I am a
+                    <span class="typed-element"></span>  
+                </h1>
 
                 <div class="infos">
                     <a href="https://github.com/alvin-2002" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faGit"></fa-icon></a>
@@ -20,8 +20,6 @@
             </div>
         </section>
     </div>
-    <!-- <button (click)="exp()">Cicl</button> -->
     <app-about></app-about>
     <app-projects></app-projects>
     <app-contacts></app-contacts>
-<!-- </div> -->

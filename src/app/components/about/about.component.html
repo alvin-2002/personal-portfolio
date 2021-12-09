@@ -1,20 +1,16 @@
 <div class="nav-scroll-adjust" id="about"></div>
-<div class="about" appScrollDirective (appear)="onAppear($event)">
-    <section class="about-section">
-        <h3 class="about-me abt-item" [ngClass]="{'line': display}">About me</h3>
+<div class="about-me-section" appScrollDirective (appear)="onAppear($event)">
+    <div class="about-me-wrapper">
+        <h3 class="about-me" [ngClass]="{'about-me-underline': display}">About me</h3>
         <div class="about-grid">
-            <div class="about-box" >
-                    <div class="card" [@aboutAnimate]="state">
-                       <p>Hello! I am a final year computer science student studying in Western Sydney University</p>
-                        <!-- <br> -->
-                        <p> I am passionate about almost everything related to technology and the internet. I enjoy learning new technology stacks. My interests range from learning Web/Mobile/Desktop app development to almost everything.</p>
-                        <!-- <br> -->
-                        <p>I am expected to be graduated by the end of 2022, and I am open to work opportunities.</p>
-                    </div>
+                <div class="about-me-text" [@aboutAnimate]="state">
+                    <p>Hello! I am a final year computer science student studying in Western Sydney University</p>
+                    <p> I am passionate about almost everything related to technology and the internet. I enjoy learning new technology stacks. My interests range from learning Web/Mobile/Desktop app development to almost everything.</p>
+                    <p>I am expected to be graduated by the end of 2022, and I am open to work opportunities.</p>
                 </div>
-                <div class="img-container">
-                    <img src="../../../assets/images/working3.png" alt="">
-                </div>
+            <div class="img-container">
+                <img src="../../../assets/images/working3.png" alt="">
+            </div>
         </div>
-    </section>
+    </div>
 </div>

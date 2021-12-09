@@ -33,7 +33,7 @@ export class LoadingComponent implements OnInit {
       targets: '#loader circle',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuart',
-      duration: 1500,
+      duration: 1900,
       delay: 300,
       direction: 'alternate',
       loop: false,
@@ -41,13 +41,24 @@ export class LoadingComponent implements OnInit {
 
     anime({
       targets: '#loader path',
-      fill: '#777764',
+      fill: '#ffd89b',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuart',
       duration: 1500,
-      delay: 500,
+      delay: 2000,
       direction: 'alternate',
       loop: false,
+    });
+
+    anime({
+      targets: ['#loader'],
+      // baseFrequency: 0,
+      scale: 0,
+      loop: false,
+      duration: 400,
+      // direction: 'alternate',
+      delay: 3300,
+      easing: 'easeInOutQuad'
     });
   }
 

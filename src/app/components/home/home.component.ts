@@ -2,6 +2,7 @@ import { animate, query, stagger, style, transition, trigger } from '@angular/an
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-home',
@@ -42,6 +43,15 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const options = {
+      strings: ['Software Engineer', 'Software Developer', 'Front-End Developer', 'Web Developer'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      lifelike: true,
+      loop: true
+ };
+ 
+  const typed = new Typed('.typed-element', options);
   }
 
 }

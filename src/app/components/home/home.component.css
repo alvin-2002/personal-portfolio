@@ -1,21 +1,5 @@
 
-.img{
-
-    /* background-image: linear-gradient(to right, rgba(44, 83, 100, 0.95), rgba(32, 58, 67, 0.9), rgba(15, 32, 39, 0.9))
-                    ,url('../../../assets/images/mainbg.jpg'); */
-    /* background-image: linear-gradient(to right bottom, rgba(24, 40, 83, 0.81), rgba(1, 1, 6, 0.85))
-                    ,url('../../../assets/images/mainbg.jpg'); */
-    /* background-image: linear-gradient(to right, rgba(64, 59, 74, 0.85) ,rgba(231, 233, 187, 0.9))
-                    ,url('../../../assets/images/mainbg.jpg'); */
-    /* background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.9) ,rgba(65, 67, 69, 0.9))
-                    ,url('../../../assets/images/mainbg.jpg'); */
-    /* background-image: linear-gradient(to right, rgba(15, 32, 39, 0.85), rgba(32, 58, 67, 0.85), rgba(44, 83, 100, 0.85))
-    ,url('../../../assets/images/mainbg.jpg '); */
-    /* background-image: linear-gradient(to right bottom, rgba(35, 53, 84, 0.8), rgba(1, 1, 6, 0.85)),url('../../../assets/images/markus-spiske-iar-afB0QQw-unsplash.jpg '); */
-    /* background-image: url('../../../assets/images/markus-spiske-iar-afB0QQw-unsplash.jpg '); */
-    /* z-index: -100;
-    background-color: black; */
-
+.hero-img{
     background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.9), rgba(65, 67, 69, 0.9)), url('../../../assets/images/mainbg.jpg ');
     height: 100vh;
     width: 100%;
@@ -23,68 +7,56 @@
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
-    /* background-color: rgba(47, 47, 47, 1); */
-    
 }
 
-.imgs {
-      /* background-image: linear-gradient(to right, rgba(15, 32, 39, 0.85), rgba(32, 58, 67, 0.85), rgba(44, 83, 100, 0.85))
-    ,url('../../../assets/images/mainbg.jpg '); */
-    background:  linear-gradient(rgba(35, 37, 38, 0.9), rgba(65, 67, 69, 0.9))
-}
-.home {
+.home-page {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     height: 100vh;
     align-items: center;
-
 }
 
-.content {
-    margin-bottom: 50px;
-}
-p {
-    color: var(--mainText);
+.home-content {
+    width: 400px;
+    margin: 0 0 50px 50px;
 }
 
-h1,h2,h4 {
-    color: var(--mainText);
+.intro-text {
+    font-family: var(--title-font);
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: whitesmoke;
 }
+
 .name-tag {
-    font-size: 7rem;
-    color: #E9E4F0;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: 45px;
+    margin-top: 0;
+    background-image: linear-gradient(to right, #f3ec78, #af4261);
+    background-clip: text;
+    color: transparent;
     font-weight: 700;
 }
 
-h4 {
-    font-size: 2.2rem;
-    /* text-align: center; */
-}
-.heading h1, h2, h4 {
-    margin: 0 0 10px 0;
-    /* font-size: 7rem; */
-    color: var(--mainText);
+.role-heading{
+    font-size: 27px;
+    font-family: var(--title-font);
+    margin: 15px 0 20px 0;
+    color:  rgba(251,191,36);
 }
 
-/* .about-me-info {
-    font-size: 20px;
-    max-width: 700px;
-    
-    
-} */
 .infos {
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
     display: flex;
     height: 35px;
 }
 .fa-icon {
-    /* position: absolute; */
     margin-top: auto;
     margin-right: 26px;
     font-size: 27px;
-    /* align-self: flex-start; */
     color: var(--secondaryText);
     transition-duration: 200ms;
     transition-timing-function: ease-in;
@@ -101,17 +73,19 @@ h4 {
 
 
 .resume-btn {
-    /* position: relative;
-    left: 25%; */
     margin-top: 8px;
-    border: 1px solid #F0C27B;
+    border: 2px solid gold;
     border-radius: 5px;
-    /* width: 100px; */
     padding: 10px;
-    color: #F0C27B;
+    color: gold;
 }
 
 .resume-btn:hover{
     background-color: rgba(228, 185, 0, 0.1);
 }
 
+@media screen and (max-width: 500px) {
+    .role-heading {
+        font-size: 25px;
+    }
+}

@@ -12,6 +12,6 @@ export class AppComponent {
   ngAfterViewInit(): void {
     setTimeout(() => {
       this.showLoading = false;
-    }, 2000)
+    }, 3500)
   }
 }
