@@ -30,7 +30,7 @@ export class LoadingComponent implements OnInit {
   constructor() { }
   ngAfterViewInit(): void {
     anime({
-      targets: '#loader circle',
+      targets: ['#loading-logo circle'],
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuart',
       duration: 1900,
@@ -40,7 +40,7 @@ export class LoadingComponent implements OnInit {
     });
 
     anime({
-      targets: '#loader path',
+      targets: ['#loading-logo path'],
       fill: '#ffd89b',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuart',
@@ -48,10 +48,11 @@ export class LoadingComponent implements OnInit {
       delay: 2000,
       direction: 'alternate',
       loop: false,
+      baseFrequency: 0,
     });
 
     anime({
-      targets: ['#loader'],
+      targets: ['#loading-logo'],
       // baseFrequency: 0,
       scale: 0,
       loop: false,
@@ -60,6 +61,7 @@ export class LoadingComponent implements OnInit {
       delay: 3300,
       easing: 'easeInOutQuad'
     });
+    console.log('done')
   }
 
   ngOnInit(): void {
