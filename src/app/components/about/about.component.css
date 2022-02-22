@@ -1,10 +1,11 @@
 .about-me-section {
-    padding: 30px 20px;
+    padding: 30px 50px;
     background-color: #2a2a2a;
 }
 
 .about-me-wrapper {
     max-width: 114rem;
+    /* max-width: 150rem; */
     margin: 0 auto;
 }
 

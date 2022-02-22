@@ -1,9 +1,12 @@
 
-<ng-container *ngIf="showLoading">
-    <app-loading></app-loading>
-</ng-container>
-<ng-container *ngIf="!showLoading">
-    <router-outlet></router-outlet>
-</ng-container>
 
-<!-- <app-about></app-about> -->
+
+    <app-loading *ngIf="showLoading"  (loading)="showLoading = $event"></app-loading>
+    <!-- <app-navbar></app-navbar> -->
+
+<!-- <ng-template [ngTemplateOutlet]="!showLoading" [ngOutletContext]="context"></ng-template> -->
+<!-- <ng-template #template> -->
+    <ng-container *ngIf="!showLoading">
+        <router-outlet></router-outlet>
+    </ng-container>
+<!-- </ng-template> -->

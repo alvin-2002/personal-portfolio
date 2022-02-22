@@ -1,6 +1,5 @@
 .body {
-   
-    background: linear-gradient(to bottom, rgba(35, 37, 38, 0.9), rgba(65, 67, 69, 0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, rgba(35, 37, 38, 0.9), rgba(65, 67, 69, 0.9));
 }
 
 .logo-loader{
@@ -9,4 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+svg path {
+    background-color: red;
 }

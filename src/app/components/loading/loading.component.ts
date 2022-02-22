@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
+
 
 
 @Component({
@@ -25,7 +26,7 @@ import anime from 'animejs/lib/anime.es.js';
   // ]
 })
 export class LoadingComponent implements OnInit {
-
+  @Output() loading: EventEmitter<boolean> = new EventEmitter(true);
   // timer = new Subject<Boolean>();
   constructor() { }
   ngAfterViewInit(): void {
@@ -60,8 +61,9 @@ export class LoadingComponent implements OnInit {
       // direction: 'alternate',
       delay: 3300,
       easing: 'easeInOutQuad'
+    }).finished.then(() => {
+      this.loading.emit(false);
     });
-    console.log('done')
   }
 
   ngOnInit(): void {

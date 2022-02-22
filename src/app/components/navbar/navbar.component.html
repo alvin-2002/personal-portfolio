@@ -1,4 +1,4 @@
-<nav [@navAnimate] [ngClass]="{'color': isScrolled, 'fixed': displayNav}">
+<nav (@navAnimate.done)="animationDone($event)" [@navAnimate] [ngClass]="{'color': isScrolled, 'fixed': displayNav}">
     <div class="logo nav-item">
       <a href="">
         <svg id="loader" width="90" height="45" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,8 +15,8 @@
       </a>
     </div>
     <ul>
-        <li class="nav-item" [ngClass]="[url === '#about' ? 'active' : '']"><a href="/#about">About</a></li>
-        <li class="nav-item" [ngClass]="[url === '#contacts' ? 'active' : '']"><a href="/#contacts" aria-current="page">Contact</a></li>
-        <li class="nav-item" [ngClass]="[url === '#projects' ? 'active' : '']"><a href="/#projects">Projects</a></li>
+        <li class="nav-item" [ngClass]="[url === '#about' ? 'active' : '']"><a href="#about">About</a></li>
+        <li class="nav-item" [ngClass]="[url === '#contacts' ? 'active' : '']"><a href="#contacts">Contact</a></li>
+        <li class="nav-item" [ngClass]="[url === '#projects' ? 'active' : '']"><a href="#projects">Projects</a></li>
     </ul>
 </nav>

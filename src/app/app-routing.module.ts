@@ -10,7 +10,9 @@ const routes: Routes = [
 
 const routerOptions: ExtraOptions = {
   useHash: false,
-  anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', scrollPositionRestoration: 'enabled'
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled', onSameUrlNavigation: 'reload',
+  paramsInheritanceStrategy: 'emptyOnly'
   // ...any other options you'd like to use
 };
 

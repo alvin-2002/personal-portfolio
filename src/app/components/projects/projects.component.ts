@@ -11,22 +11,29 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
     trigger('aboutAnimate', [
       state('hidden', style({
         opacity: 0, 
-        transform: 'translateY(15px)'
+        transform: 'translateX(15px)'
       })),
 
         transition('hidden => appear', [
-          animate(800, keyframes([
+          animate(300, keyframes([
             style({
-              transform: 'translateX(-20px)',
+              transform: 'translateY(30px)',
               opacity: 0,
-     
             }),
             style({
-              transform: 'translateX(-10px)',
+              transform: 'translateY(20px)',
+              opacity: 0.3,
+            }),
+            style({
+              transform: 'translateY(10px)',
               opacity: 0.5,
             }),
             style({
-              transform: 'translateX(-0px)',
+              transform: 'translateY(5px)',
+              opacity: 0.7,
+            }),
+            style({
+              transform: 'translateY(0px)',
               opacity: 1,
             }),
           ]))

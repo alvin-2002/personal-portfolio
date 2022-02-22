@@ -1,21 +1,21 @@
-
+<div>
     <div class="hero-img">
-        <app-navbar></app-navbar>
-        <section [@navAnimate] class="home-page">
+        <app-navbar (navAnimationDone)="animationState = $event"></app-navbar>
+        <section *ngIf="animationState == 'done'" class="home-page"  [@heroAnimate] (@heroAnimate.start)="animationStart($event)">
             <div class="home-content">
-                <h1 class="nav-item intro-text">Hi, My name is</h1>
-                <h1 class="name-tag nav-item">Alvin Lin</h1>
-                <h1 class="nav-item role-heading">I am a
+                <h1 class="hero-item intro-text">Hi, My name is</h1>
+                <h1 class="hero-item name-tag ">Alvin Lin</h1>
+                <h1 class="hero-item role-heading">I am a
                     <span class="typed-element"></span>  
                 </h1>
 
-                <div class="infos">
-                    <a href="https://github.com/alvin-2002" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faGit"></fa-icon></a>
-                    <a href="https://www.linkedin.com/in/alvin-lin/" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
-                    <a href="mailto: alvinmaung@gmail.com" target="_blank" class="nav-item fa-icon"><fa-icon [icon]="faEmail"></fa-icon></a>        
+                <div class="hero-item infos">
+                    <a href="https://github.com/alvin-2002" target="_blank" class="fa-icon"><fa-icon [icon]="faGit"></fa-icon></a>
+                    <a href="https://www.linkedin.com/in/alvin-lin/" target="_blank" class="fa-icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                    <a href="mailto: alvinmaung@gmail.com" target="_blank" class="fa-icon"><fa-icon [icon]="faEmail"></fa-icon></a>        
                 </div>
-                <div class="resume nav-item">
-                    <a href="#" class="resume-btn">Resume</a>
+                <div class="resume hero-item">
+                    <a href="../../../assets/Resume.pdf" target="_blank" rel="icon" class="resume-btn">Resume</a>
                 </div>
             </div>
         </section>
@@ -23,3 +23,4 @@
     <app-about></app-about>
     <app-projects></app-projects>
     <app-contacts></app-contacts>
+</div>
